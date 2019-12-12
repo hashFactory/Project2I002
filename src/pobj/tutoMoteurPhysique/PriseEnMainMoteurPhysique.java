@@ -22,11 +22,11 @@ public class PriseEnMainMoteurPhysique {
         mphys.add(particule);
         
         // graphiques: PARTIE A FAIRE
-        /*Fenetre mgraph = new Fenetre();
+        Fenetre mgraph = new Fenetre();
         // Création des vues associées aux objets physiques
         mgraph.add(new VueParticule(particule));
         mgraph.add(new VueMur(mur));
-        */
+
         // boucle de mouvement + affichage
         for(int iter = 0; iter<200; iter++) {
             // mouvements
