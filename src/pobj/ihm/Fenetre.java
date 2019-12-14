@@ -17,7 +17,7 @@ public class Fenetre extends JFrame{
     private ArrayList<Drawable> listToDraw;
 
     public Fenetre(){
-        super("Simulation multi-agents");
+        super("Simulation multi-agents - Tristan Charpentier");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         listToDraw = new ArrayList<Drawable>();
         JPanel panel = new JPanel(){
@@ -54,7 +54,7 @@ public class Fenetre extends JFrame{
     // dessiner l'image courante
     public BufferedImage getImage() {
         BufferedImage im = new BufferedImage(this.getWidth(), this.getHeight(), BufferedImage.TYPE_4BYTE_ABGR);
-//        this.getContentPane().paint(im.getGraphics());
+        this.getContentPane().paint(im.getGraphics());
         im.getGraphics().setColor(Color.BLUE);
         im.getGraphics().fillRect(0, 0, this.getWidth(), this.getHeight());
         for(int i=0; i<listToDraw.size(); i++)

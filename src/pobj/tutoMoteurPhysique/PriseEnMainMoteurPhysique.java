@@ -4,6 +4,7 @@ import pobj.ihm.Fenetre;
 import pobj.physics.CerclePhysique;
 import pobj.physics.MoteurPhysique;
 import pobj.physics.RectanglePhysique;
+import pobj.simuagent.Terrain;
 
 
 public class PriseEnMainMoteurPhysique {
@@ -32,10 +33,9 @@ public class PriseEnMainMoteurPhysique {
             // mouvements
             mphys.updateMovablePosition();
             // affichage  // A DECOMMENTER UNE FOIS LES CLASSES D'AFFICHAGE REALISEES
-            /* mgraph.repaint();      
+            mgraph.repaint();
             // temporisation (sinon, on ne voit rien)
             Thread.sleep(50);
-            */
             if(!mphys.isMove()) {
                 System.out.println("plus de mouvement => sortie");
                 break;

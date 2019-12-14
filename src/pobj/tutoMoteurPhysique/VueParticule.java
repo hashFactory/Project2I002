@@ -7,8 +7,8 @@ import java.awt.*;
 
 public class VueParticule implements Drawable {
 
-    private double x;
-    private double y;
+    public double x;
+    public double y;
     private double rayon;
 
     public VueParticule() {
